@@ -1,26 +1,18 @@
-# Project 3: Feature Selection + Classification
+# UCI Madelon Dataset Project
 
 ### Domain and Data
 
-You're working as a data scientist with a research firm. You're firm is bidding on a big project that will involve working with thousands or possibly tens of thousands of features. You know it will be impossible to use conventional feature selection techniques. You propose that a way to win the contract is to demonstrate a capacity to identify relevant features using machine learning. Your boss says, "Great idea. Write it up." You figure that working with a synthetic dataset such as [Madelon](https://archive.ics.uci.edu/ml/datasets/Madelon) is an excellent way to demonstrate your abilities. 
+Data: [Madelon](https://archive.ics.uci.edu/ml/datasets/Madelon)
 
-#### Requirement
+"*Abstract:* MADELON is an artificial dataset, which was part of the NIPS 2003 feature selection challenge. This is a two-class classification problem with continuous input variables. The difficulty is that the problem is multivariate and highly non-linear."
 
-This work must be done on AWS.
+
 
 ### Problem Statement
 
-Your challenge here is to develop a series of models for two purposes:
+1. identifying relevant features. 
+2. generating predictions from the model. 
 
-1. for the purposes of identifying relevant features. 
-2. for the purposes of generating predictions from the model. 
-
-### Solution Statement
-
-Your final product will consist of:
-
-1. A prepared report
-2. A series of Jupyter notebooks to be used to control your pipelines
 
 ### Tasks
 
@@ -28,8 +20,10 @@ Your final product will consist of:
 
 You should do substantive work on at least six subsets of the data. 
 
-- 3 sets of 10% of the data from the UCI Madelon set
-- 3 sets of 10% of the data from the Madelon set made available by your instructors
+- Subset of 10% of the data from the UCI Madelon set
+- All of the data from the UCI Madelon set
+- Subset of 10% of the data from the Madelon set made available by an instructor (Joshua Cook)
+- All of the data from the Madelon set made available by an instructor (Joshua Cook)
 
 ##### Prepared Report
 
