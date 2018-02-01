@@ -36,10 +36,10 @@ Note: I did not conduct a separate benchmarking analysis for a subset of the UCI
 
 Given what I know about the data and the classes, I first performed unsupervised approaches to try and determine important features. Since I know that there are only 20 important features out of 500, I thought I could check to see if there were correlations across features. By using my ```.corr()``` method, I was able to discern 20 features with significant correlation to at least 1 other feature. I've provided the section of code used to do this:
 
-```predictors_corr = predictors.corr()
-hi_corrs = predictors_corr.abs() > .5
-hi_count = predictors_corr[hi_corrs].count() > 1
-top_corrs = list(predictors_corr[hi_count].index)```
+`predictors_corr = predictors.corr()`
+`hi_corrs = predictors_corr.abs() > .5`
+`hi_count = predictors_corr[hi_corrs].count() > 1`
+`top_corrs = list(predictors_corr[hi_count].index)`
 
 Essentially, this is measuring the correlation of each feature with every other feature in the data set (including itself). The code above is checking to look for correlations greater than .5. If a feature is correlated with more than 1 feature at that threshold (because every feature will have a correlation of 1.0 with itself), it gets flagged as being a top correlated feature. This resulted in 20 important features in both UCI's Madelon data set and the Josh Cook data set.
 
